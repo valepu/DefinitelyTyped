@@ -167,8 +167,14 @@ declare namespace autobahn {
     interface IPublishOptions {
         acknowledge?: boolean;
         exclude?: number[];
+        exclude_authid?: string[];
+        exclude_authrole: string[];
         eligible?: number[];
+        eligible_authid?: string[];
+        eligible_authrole?: string[];
+        retain? Boolean;
         disclose_me?: Boolean;
+        exclude_me?: Boolean;
     }
 
     interface ISubscribeOptions {
